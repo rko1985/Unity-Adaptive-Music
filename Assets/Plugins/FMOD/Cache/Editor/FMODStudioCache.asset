@@ -17,12 +17,47 @@ MonoBehaviour:
   - {fileID: 114988075305876926}
   EditorEvents:
   - {fileID: 114443218567160576}
+  - {fileID: 114584309013546880}
   MasterBanks:
   - {fileID: 114988075305876926}
   StringsBanks:
   - {fileID: 114139921580640634}
-  stringsBankWriteTime: 637431871063750002
+  stringsBankWriteTime: 637455272982149537
   cacheVersion: 3
+--- !u!114 &114043177652120652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HRS/To Exploring
+  m_EditorClassIdentifier: 
+  Name: To Exploring
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114114456074357862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VO/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &114139921580640634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,11 +72,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\russe\Desktop\Game Music Course\Adaptive Music\Adaptive Music\Build\Desktop\Master
     Bank.strings.bank
-  lastModified: 637431871063750002
+  lastModified: 637455272982149537
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 666
+    Value: 712
+  Exists: 1
+--- !u!114 &114311812864904946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HRS/To Battle
+  m_EditorClassIdentifier: 
+  Name: To Battle
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &114443218567160576
 MonoBehaviour:
@@ -63,10 +115,37 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114585650425995080}
+  - {fileID: 114114456074357862}
   MinDistance: 0
   MaxDistance: 0
   Length: 19200
+--- !u!114 &114584309013546880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HRS
+  m_EditorClassIdentifier: 
+  Path: event:/HRS
+  guid: 338d52532a8fa34c945b79d6617f5cc3
+  Banks:
+  - {fileID: 114988075305876926}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114984314313605822}
+  - {fileID: 114043177652120652}
+  - {fileID: 114311812864904946}
+  - {fileID: 114634915461861444}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 82666
 --- !u!114 &114585650425995080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +162,40 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+  Exists: 0
+--- !u!114 &114634915461861444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HRS/To Invincible
+  m_EditorClassIdentifier: 
+  Name: To Invincible
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114984314313605822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HRS/To Chaos
+  m_EditorClassIdentifier: 
+  Name: To Chaos
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &114988075305876926
 MonoBehaviour:
@@ -98,9 +211,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\russe\Desktop\Game Music Course\Adaptive Music\Adaptive Music\Build\Desktop\Master
     Bank.bank
-  lastModified: 637431871063700024
+  lastModified: 637455272982039583
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 783776
+    Value: 2155104
   Exists: 1
